@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Our App</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">Our App</div>
+        <div class="nav-links">
+            <span id="userEmail" class="user-info"></span>
+            <button onclick="logout()" class="btn btn-secondary">Logout</button>
+        </div>
+    </nav>
+
+    <div class="dashboard-container">
+        <div class="welcome-section">
+            <h1>Dashboard</h1>
+            <p>Welcome to your personal dashboard!</p>
+        </div>
+
+        <div class="dashboard-content">
+            <div class="card">
+                <h3>Profile Information</h3>
+                <p>Email: <span id="dashboardEmail"></span></p>
+                <p>Last login: <span id="lastLogin"></span></p>
+            </div>
+
+            <div class="card">
+                <h3>Quick Actions</h3>
+                <button class="btn btn-primary">Edit Profile</button>
+                <button class="btn btn-secondary">Settings</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
